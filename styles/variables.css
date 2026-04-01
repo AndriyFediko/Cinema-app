@@ -1,0 +1,14 @@
+:root {
+    --color-bg: #090e27;
+    --color-bg-card: #1b1f35;
+    --color-bg-darkGrey: #2e3147;
+    --color-bg-accent: #ffd635;
+    --color-text-main: #ffffff;
+    --color-text-accent: #ffd635;
+    --color-text-grey: #a1a0a8;
+    --radius-button: 50px;
+    --radius-card: 20px;
+    --fw-bold: 700;
+    --font-main: "montserrat", sans-serif;
+    --font-accent: "Arvo", serif;
+}

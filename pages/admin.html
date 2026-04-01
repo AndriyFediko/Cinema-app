@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
+    <title>Адмін-панель</title>
+    <link rel="stylesheet" href="../styles/components.css">
+</head>
+<body>
+
+    <section class="auth-section" id="login-section">
+        <div class="auth-box">
+            <h2 class="auth-box__title">Адмін-панель</h2>
+            <p class="auth-box__subtitle">Введіть пароль для доступу до бази</p>
+            
+            <div class="auth-form__group">
+                <label class="auth-form__label">Пароль доступу</label>
+                <input type="password" id="admin-password" class="auth-form__input" placeholder="Введіть пароль...">
+                <div class="error-msg" id="error-msg">Невірний пароль</div>
+            </div>
+            
+            <button class="button button--submit" onclick="checkPassword()">Увійти</button>
+        </div>
+    </section>
+
+    <section class="admin-dashboard" id="dashboard-section">
+        <div class="admin-header">
+            <h1>Зареєстровані користувачі</h1>
+            <button class="button button--logout" onclick="logout()">Вийти</button>
+        </div>
+
+        <div class="users-list"></div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="../scripts/admin.js"></script>
+</body>
+</html>
