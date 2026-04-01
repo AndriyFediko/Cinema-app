@@ -82,8 +82,8 @@ let moviesArr = [
         genre: "Науково-фантастичний фільм",
         time: ["15:00"],
         price: 170,
-        thumbnailUrl: "../images/interstellarThumbnail.webp",
-        mainImageUrl: "../images/interstellarMain.webp",
+        thumbnailUrl: "./images/interstellarThumbnail.webp",
+        mainImageUrl: "./images/interstellarMain.webp",
         description: "Коли ресурси Землі вичерпуються, група дослідників вирушає у найважливішу місію в історії людства: подорож за межі нашої галактики, щоб дізнатися, чи є у людства майбутнє серед зірок. Візуальний шедевр про час, любов та виживання.",
         trailerUrl: `<iframe width="560" height="315" src="https://www.youtube.com/embed/I9fucTH5xWw?si=epsJJ7FMoh3btDAr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`,
         occupiedSeats: [
@@ -106,8 +106,8 @@ let moviesArr = [
         genre: "біографічна драма",
         time: ["18:00", "19:30"],
         price: 200,
-        thumbnailUrl: "../images/theFounderThumbnail.webp",
-        mainImageUrl: "../images/theFounderMain.webp",
+        thumbnailUrl: "./images/theFounderThumbnail.webp",
+        mainImageUrl: "./images/theFounderMain.webp",
         description: "Вражаюча історія Рея Крока, невдачливого комівояжера, який зустрів братів МакДональдів і побачив у їхній інноваційній системі приготування бургерів потенціал для створення величезної імперії. Шлях від маленької закусочної до світового лідера фастфуду.",
         trailerUrl: `<iframe width="560" height="315" src="https://www.youtube.com/embed/AX2uz2XYkbo?si=fLmOyvraoME05ndz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`,
         occupiedSeats: [
@@ -139,8 +139,8 @@ let moviesArr = [
         genre: "Пригодницький мультфільм",
         time: ["11:00", "13:00"],
         price: 160,
-        thumbnailUrl: "../images/zooTopiaThumbnail.webp",
-        mainImageUrl: "../images/zooTopiaMain.webp",
+        thumbnailUrl: "./images/zooTopiaThumbnail.webp",
+        mainImageUrl: "./images/zooTopiaMain.webp",
         description: "Хоробрі поліцейські Джуді Лаввіл та Нік Вайлд повертаються! Цього разу їм доведеться розплутати найскладнішу справу в історії міста, яка загрожує зруйнувати крихкий мир між хижаками та травоїдними. Нові герої, ще більше гумору та детективних загадок.",
         trailerUrl: `<iframe width="560" height="315" src="https://www.youtube.com/embed/y985bpg3h7U?si=dwtWhAGPJOECLM2O" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`,
         occupiedSeats: [
@@ -173,8 +173,8 @@ let moviesArr = [
         genre: "Пригодницький мультфільм",
         time: ["14:00", "18:00"],
         price: 180,
-        thumbnailUrl: "../images/howToTameADreagonThumbnail.webp",
-        mainImageUrl: "../images/howToTameADragonAMain.webp",
+        thumbnailUrl: "./images/howToTameADreagonThumbnail.webp",
+        mainImageUrl: "./images/howToTameADragonAMain.webp",
         description: "Історія дружби молодого вікінга Гикавки, який не хоче бути вбивцею драконів, та пораненого дракона Нічної Люті. Разом вони змінять уявлення свого племені про ворогів та доведуть, що мир можливий, якщо відкрити своє серце невідомому.",
         trailerUrl: `<iframe width="560" height="315" src="https://www.youtube.com/embed/2AKsAxrhqgM?si=srOv_o7CddNYnD-m" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`,
         occupiedSeats: [
