@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="uk">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="../styles/style.css">
+        <title>Авторизація - Кінотеатр</title>
+    </head>
+    <body>
+        <main class="auth-section">
+            <a href="../index.html" class="back-button" aria-label="Повернутися на головну">
+                <svg class="back-button__icon" viewBox="0 0 24 24">
+                    <path fill="currentColor" d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z" />
+                </svg>
+            </a>
+
+            <div class="auth-box">
+                <h2 class="auth-box__title" id="auth-title">Створити акаунт</h2>
+                <p class="auth-box__subtitle" id="auth-subtitle">Приєднуйся, щоб купувати квитки та отримувати бонуси</p>
+
+                <form action="#" class="auth-form">
+                    <div class="auth-form__group" id="name-group">
+                        <label for="reg-name" class="auth-form__label">Ім'я</label>
+                        <input type="text" id="reg-name" class="auth-form__input" placeholder="Введіть ваше ім'я" />
+                    </div>
+
+                    <div class="auth-form__group">
+                        <label for="reg-email" class="auth-form__label">Email</label>
+                        <input type="email" id="reg-email" class="auth-form__input" placeholder="example@mail.com" required />
+                    </div>
+
+                    <div class="auth-form__group">
+                        <label for="reg-password" class="auth-form__label">Пароль</label>
+                        <input type="password" id="reg-password" class="auth-form__input" placeholder="Мінімум 8 символів" required />
+                    </div>
+
+                    <div class="auth-form__group" id="confirm-password-group">
+                        <label for="reg-password-confirm" class="auth-form__label">Повторіть пароль</label>
+                        <input type="password" id="reg-password-confirm" class="auth-form__input" placeholder="Повторіть ваш пароль" />
+                    </div>
+
+                    <button type="submit" class="button button--submit" id="auth-submit-btn">Зареєструватися</button>
+                    
+                    <div style="text-align: center; margin-top: 20px; font-size: 0.9em; color: var(--color-text-grey);">
+                        <span id="toggle-prompt">У вас вже є акаунт?</span>
+                        <a href="#" id="toggle-link" style="color: var(--color-text-accent); text-decoration: none; font-weight: var(--fw-bold); margin-left: 5px;">Увійти</a>
+                    </div>
+                </form>
+            </div>
+        </main>
+        <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+        <script src="../scripts/register.js"></script>
+    </body>
+</html>
