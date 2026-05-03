@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
+    <title>Адмін-панель</title>
+    <link rel="stylesheet" href="../styles/style.css">
+</head>
+<body>
+
+    <section class="auth-section" id="login-section">
+        <div class="auth-box">
+            <h2 class="auth-box__title">Адмін-панель</h2>
+            <p class="auth-box__subtitle">Введіть пароль для доступу до бази</p>
+            
+            <div class="auth-form__group">
+                <label class="auth-form__label">Пароль доступу</label>
+                <input type="password" id="admin-password" class="auth-form__input" placeholder="Введіть пароль...">
+                <div class="error-msg" id="error-msg">Невірний пароль</div>
+            </div>
+            
+            <button class="button button--submit" id="login-btn">Увійти</button>
+        </div>
+    </section>
+
+    <section class="admin-dashboard" id="dashboard-section" style="display: none;">
+        <div class="admin-header" style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
+            <h1>Панель керування</h1>
+            <button class="button button--logout" id="logout-btn">Вийти</button>
+        </div>
+
+        <div class="admin-tabs">
+            <button class="tab-btn active" data-tab="users">Користувачі</button>
+            <button class="tab-btn" data-tab="movies">Фільми</button>
+        </div>
+
+        <div id="tab-users" class="tab-content active">
+            <h2 style="margin-bottom: 20px;">Зареєстровано користувачів: <span id="users-count" style="color: #f1c40f;">0</span></h2>
+            <div class="users-list" id="users-list-container"></div>
+        </div>
+
+        <div id="tab-movies" class="tab-content">
+            <h2 style="margin-bottom: 20px;">Керування афішею</h2>
+            
+            <div class="tab-content__container">
+                <h3>Додати новий фільм</h3>
+                <div class="auth-form__group">
+                    <input type="text" id="movie-title" class="auth-form__input" placeholder="Назва фільму">
+                    <input type="text" id="movie-genre" class="auth-form__input" placeholder="Жанр" style="margin-top: 10px;">
+                    <input type="number" id="movie-price" class="auth-form__input" placeholder="Ціна квитка (грн)" min="0" style="margin-top: 10px;">
+                    <textarea id="movie-desc" class="auth-form__input" placeholder="Опис фільму" style="margin-top: 10px; min-height: 80px;"></textarea>
+                    <input type="text" id="movie-thumbnail" class="auth-form__input" placeholder="Посилання на заставку" style="margin-top: 10px;">
+                    <input type="text" id="movie-main-img" class="auth-form__input" placeholder="Посилання на головний банер" style="margin-top: 10px;">
+                    <input type="text" id="movie-trailer" class="auth-form__input" placeholder="Код <iframe> трейлера з YouTube" style="margin-top: 10px;">
+                    <input type="text" id="movie-times" class="auth-form__input" placeholder="Сеанси через кому (напр. 10:00, 14:30, 18:00)" style="margin-top: 10px;">
+                    
+                    <button class="button button--submit" id="add-movie-btn" style="margin-top: 15px;">Додати фільм</button>
+                </div>
+            </div>
+
+            <h3>Наявні фільми в базі</h3>
+            <div id="movies-list" class="users-list" style="margin-top: 15px;"></div>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="../scripts/admin.js"></script>
+</body>
+</html>
